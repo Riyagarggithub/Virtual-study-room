@@ -10,15 +10,19 @@ export default defineConfig({
     hmr: {
       protocol: 'wss',
       clientPort: 443
-    }
+    },
+    // Add allowed hosts inside server config
+    allowedHosts: [
+      'virtual-study-room-6.onrender.com',
+      'localhost'
+    ]
   },
   preview: {
     host: '0.0.0.0',
     port: parseInt(process.env.PORT) || 5173,
     cors: true,
-    // Explicitly allow your Render domain
     allowedHosts: [
-      'virtual-study-room-5.onrender.com',
+      'virtual-study-room-6.onrender.com',
       'localhost'
     ]
   }
