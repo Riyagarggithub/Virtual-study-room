@@ -8,14 +8,18 @@ export default defineConfig({
     port: 5173,
     strictPort: true,
     hmr: {
-      clientPort: 443, // Required for Render's HTTPS
-    },
+      protocol: 'wss',
+      clientPort: 443
+    }
   },
   preview: {
     host: '0.0.0.0',
-    port: process.env.PORT || 5173,
-    // 👇 Disable host check (safe for preview mode)
+    port: parseInt(process.env.PORT) || 5173,
     cors: true,
-    disableHostCheck: true, // Bypasses the "Blocked request" error
-  },
+    // Explicitly allow your Render domain
+    allowedHosts: [
+      'virtual-study-room-3.onrender.com',
+      'localhost'
+    ]
+  }
 });
