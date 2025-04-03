@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview --port $PORT",
+  "test": "vitest"
   },
   "dependencies": {
     "@zegocloud/zego-uikit-prebuilt": "^2.14.3-beta",
