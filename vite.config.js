@@ -18,7 +18,7 @@ export default defineConfig({
     cors: true,
     // Explicitly allow your Render domain
     allowedHosts: [
-      'virtual-study-room-4.onrender.com',
+      'virtual-study-room-5.onrender.com',
       'localhost'
     ]
   }
