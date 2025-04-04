@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>StudyInn - Your Study Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/home/styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo-container">
+                <img src="/home/logo4.png" alt="StudyInn Logo" class="header-logo" />
+                <h1>StudyInn</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="auth-links">
+                <a href="/home/signin.html">Sign In</a>
+                <a href="/home/signup.html">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <!-- Hero Image -->
+        <div class="hero-section">
+            <div class="hero-content">
+              <div class="hero-text">
+                <h2>Welcome to StudyInn!</h2>
+                <p>Join the ultimate study community—where students connect, learn, and grow together!</p>
+                <a href="/home/signup.html" class="get-started-btn">Get Started</a>
+              </div>
+              <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644" alt="Students studying together" />
+              </div>
+            </div>
+          </div>
+
+        <!-- About Section -->
+        <section class="about-section" id="about" data-aos="fade-up">
+            <h2>About Us</h2>
+            <p>Welcome to StudyInn, your ultimate hub for collaborative learning and academic success. We’re dedicated to connecting students and educators worldwide with tools designed to enhance study experiences. Our mission is to foster a supportive community where knowledge thrives.</p>
+            <p>Founded in 2025, StudyInn blends modern technology with a passion for education to create a platform that’s both intuitive and inspiring. Whether you're preparing for exams or working on group projects, StudyInn is here to support your journey.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services" data-aos="fade-up">
+            <!-- <div class="services-container" data-aos="zoom-in" data-aos-delay="200"></div> -->
+            <h2>Our Services</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Join Room</h3>
+                    <p>Connect with study groups instantly by joining existing rooms.</p>
+                </div>
+                <div class="service-item">
+                    <h3><a href="/chat">Chat</a></h3>
+                    <p>Communicate seamlessly with fellow students in real-time.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Notes</h3>
+                    <p>Share and access study materials. Upload your own notes to help peers or browse through a collection of high-quality notes from other students.</p>
+                </div>
+            </div>
+        </section>
+        <!--Reviews Section-->
+        <section class="reviews-section" id="reviews" data-aos="fade-up">
+            <h2>What Students Say</h2>
+            <div class="reviews-container">
+                <!-- Existing review cards remain unchanged -->
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah K." class="reviewer-avatar">
+                        <div class="reviewer-details">
+                            <h4>Sarah K.</h4>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"StudyInn transformed my study routine! The shared notes helped me ace my finals when I missed lectures due to illness."</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="David P." class="reviewer-avatar">
+                        <div class="reviewer-details">
+                            <h4>David P.</h4>
+                            <div class="rating">★★★★☆</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"The collaborative features are game-changers. Found study partners for every tough subject through this platform."</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya M." class="reviewer-avatar">
+                        <div class="reviewer-details">
+                            <h4>Priya M.</h4>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Uploading my notes helped me organize them better, and the positive feedback from peers was incredibly motivating!"</p>
+                </div>
+                </div>
+            </div>
+            
+            <!-- Add Review Button -->
+            <div class="review-cta">
+                <button class="review-btn">Leave a Review</button>
+            </div>
+
+            <!-- Review Form Overlay -->
+            <div class="review-form-overlay">
+                <div class="review-form-container">
+                    <form class="review-form">
+                        <button type="button" class="close-form">&times;</button>
+                        <h3>Write Your Review</h3>
+                        
+                        <div class="form-group">
+                            <label for="reviewer-name">Your Name</label>
+                            <input type="text" id="reviewer-name" required placeholder="Enter your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Rating</label>
+                            <div class="star-rating">
+                                <span class="star" data-value="1">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="5">★</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="review-text">Your Review</label>
+                            <textarea id="review-text" rows="5" required placeholder="Share your experience..."></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="cancel-btn">Cancel</button>
+                            <button type="submit" class="submit-btn">Submit Review</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <h3>Contact Us</h3>
+            <p>Email: studyinn@gmail.com</p>
+            <p>Phone: +91 6264161588</p>
+            <p>Address: Bennett University</p>
+            <p>© 2025 StudyInn. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="/home/reviews.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+    window.addEventListener("load", function () {
+      document.body.classList.add("loaded");
+    });
+  </script>
+</body>
+
+</html>
+
+
